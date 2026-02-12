@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>사업자 · 개인 자금 상담 서비스</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  background:linear-gradient(135deg,#f8f9fb,#eef1f5);
+  color:#222;
+}
+
+.wrap{
+  max-width:720px;
+  margin:auto;
+  padding:20px;
+}
+
+.hero{
+  text-align:center;
+  padding:40px 10px 20px;
+}
+
+.hero h1{
+  font-size:26px;
+  font-weight:800;
+}
+
+.hero p{
+  color:#555;
+}
+
+/* 카드 */
+.card{
+  background:#fff;
+  padding:22px;
+  border-radius:18px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.08);
+  margin-top:22px;
+}
+
+/* 버튼 공통 */
+.btn{
+  width:100%;
+  padding:15px;
+  border-radius:12px;
+  font-size:16px;
+  font-weight:700;
+  border:none;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+/* 상담 버튼 */
+.btn-main{
+  background:#111;
+  color:#fff;
+}
+
+/* 텔레그램 버튼 */
+.btn-telegram{
+  background:#27A7E7;
+  color:#fff;
+  text-decoration:none;
+  display:block;
+  text-align:center;
+}
+
+/* 폼 */
+input,select,textarea{
+  width:100%;
+  padding:14px;
+  margin:6px 0 16px;
+  border:1px solid #e2e2e2;
+  border-radius:10px;
+  background:#fafafa;
+}
+
+ul{
+  padding-left:18px;
+}
+
+.small{
+  font-size:12px;
+  color:#666;
+}
+
+.footer{
+  text-align:center;
+  font-size:12px;
+  color:#888;
+  margin-top:30px;
+}
+</style>
+</head>
+
+
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <h1>사업자 · 개인 자금 상담 서비스</h1>
+  <p>한도 · 금리 · 상환 조건 무료 상담 진행</p>
+</div>
+
+
+<!-- 상담 폼 -->
+<div class="card">
+<h2>📩 상담 신청서</h2>
+
+<form action="https://formsubmit.co/kduck0101@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="자금상담 신청 접수">
+
+이름
+<input name="name" required>
+
+연락처
+<input name="phone" required>
+
+직업
+<input name="job">
+
+텔레그램/카카오/라인 ID
+<input name="talkid" required>
+
+필요 금액
+<select name="amount">
+<option>100만원 이하</option>
+<option>500만원 이하</option>
+<option>1,000만원 이상</option>
+</select>
+
+상담 내용
+<textarea name="message" rows="4"></textarea>
+
+<label class="small">
+<input type="checkbox" required>
+ 개인정보 수집 및 상담 목적 활용 동의
+</label>
+
+<button type="submit" class="btn btn-main">무료 상담 신청하기 🚀</button>
+</form>
+
+<!-- 텔레그램 바로 문의 버튼 -->
+<a href="https://t.me/szx012520" class="btn btn-telegram" target="_blank">
+💬 텔레그램 바로 상담하기
+</a>
+
+</div>
+
+
+<!-- 대상 -->
+<div class="card">
+<h2>상담 가능 대상</h2>
+<ul>
+<li>개인사업자</li>
+<li>법인사업자</li>
+<li>직장인</li>
+<li>프리랜서</li>
+</ul>
+</div>
+
+
+<!-- 조건 -->
+<!-- <div class="card">
+<h2>대출 조건 예시</h2>
+<ul>
+<li>한도 : 상담 후 결정</li>
+<li>최대 연이율(APR) : 연 20% 이내(이자와 수수료 포함)</li>
+<li>상환 기간: 최단 61일 ~ 최대 12개월</li>
+<li>기타: 중도 상환 수수료 없음, 부대 비용 없음</li>
+<li>대출 총 비용 예시: 100만 원을 최대 연이율(APR) 20%로 12개월 동안 만기상환 시, 총 상환 금액은 1,200,000원입니다. (취급 수수료 등 추가 비용 없음)
+</li>
+<li>​연체 이자율: 대출 금리 + 3% 이내 (단, 법정 최고 금리 20% 이내)</li>
+</ul>
+</div>-->
+
+<!-- 업체 정보 -->
+<!-- <div class="card small">
+  상호 : 한결대부중개<br>
+  대표자 : 양승진<br>
+  대부업 등록번호 : 2020-서울동대문-0029<br>
+  주소 : 서울특별시 동대문구 용두동 797 청량리역 해링턴플레이스
+  상담시간 : 24시 연중무휴
+</div>
+  -->
+<div class="footer">
+© 상담 서비스
+</div>
+
+</div>
+</body>
+</html>
