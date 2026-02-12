@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://szx012520.github.io/landing/sitemap.xml
